@@ -20,6 +20,7 @@ Route::get('/', "FrontPageController@index");
 
 // front page route
 Route::get('/gallery/list/{id}', "FrontPageController@list");
+Route::get('/gallery/detail/{id}', "FrontPageController@detail");
 // user route
 Route::get('/user', "UserController@index");
 Route::get('/user/profile', "UserController@load_profile");
@@ -67,11 +68,21 @@ Route::get("/upload-gallery/create", "UploadGalleryController@create");
 Route::post("/upload-gallery/save", "UploadGalleryController@save");
 Route::get("/upload-gallery/delete/{id}", "UploadGalleryController@delete");
 
-// upload slideshow
-Route::get("/slideshow", "SlideshowController@index");
-Route::get("/slideshow/create", "SlideshowController@create");
-Route::post("/slideshow/save", "SlideshowController@save");
-Route::get("/slideshow/delete/{id}", "SlideshowController@delete");
+// Slide 
+Route::get('/slide', "SlideController@index");
+Route::get('/slide/create', "SlideController@create");
+Route::post('/slide/save', "SlideController@save");
+Route::get('/slide/edit/{id}', "SlideController@edit");
+Route::post('/slide/update', "SlideController@update");
+Route::get('/slide/delete/{id}', "SlideController@delete");
+// Page
+Route::get('/page', "PageController@index");
+Route::get('/page/create', "PageController@create");
+Route::post('/page/save', "PageController@save");
+Route::get('/page/delete/{id}', "PageController@delete");
+Route::get('/page/edit/{id}', "PageController@edit");
+Route::post('/page/update', "PageController@update");
+Route::get('/page/view/{id}', "PageController@view");
 
 Route::get('/component/delete/{id}', "ComponentController@delete");
 // language

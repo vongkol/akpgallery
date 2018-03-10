@@ -28,31 +28,15 @@
     <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">SRI V2</a>
+    <a class="navbar-brand" href="#">AKP</a>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{url('/home')}}">{{trans('labels.home')}}</a>
-            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('/setting')}}">{{trans('labels.administration')}} <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">{{trans('labels.help')}}</a>
-            </li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link" onclick="chLang(event,'km')">
-                    <img src="{{asset('img/khmer.png')}}" alt="" width="35" style="border:1px solid #ababab"> ខ្មែរ
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" onclick="chLang(event,'en')">
-                    <img src="{{asset('img/english.png')}}" alt="" width="35" style="border:1px solid #ababab"> English
-                </a>
-            </li>
             <li class="nav-item" style="margin-left:27px">
                 &nbsp;
             </li>
@@ -86,8 +70,12 @@
                     <a class="nav-link" href="{{url('/category')}}" id="category"><i class="fa fa-tags text-info"></i> Category</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/slideshow')}}" id="slideshow"><i class="fa fa-slideshare text-info"></i> Slideshow</a>
+                    <a class="nav-link" href="{{url('/page')}}" id="page"><i class="fa fa-book text-info"></i> Page</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/slide')}}" id="slideshow"><i class="fa fa-slideshare text-info"></i> Slideshow</a>
+                </li>
+                
             </ul>
             <ul class="nav nav-pills flex-column" id="siderbar">
                 <li class="nav-item"><strong>User Management</strong></li>

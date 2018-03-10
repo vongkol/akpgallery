@@ -12,7 +12,6 @@
   <!-- Theme styles END -->
 </head>
 <!-- Head END -->
-
 <!-- Body BEGIN -->
 <body class="corporate container">
 <div class="bordertop"> 
@@ -25,28 +24,19 @@
                 <!-- BEGIN TOP BAR LEFT PART -->
                 <div class="col-md-9 col-sm-9 additional-shop-info">
                     <ul class="list-unstyled list-inline header-top-co">
-                        <li><a class="nav-link" href="{{url('/')}}"><span>HOME</span></a></li>
-                        <li><a href="contact.html"><span>CONTACT</span></a></li>
                         <li><span style="color: #FF0000; font-size: 11px;">KHMER</span> <img src="{{asset('front/img/kh.gif')}}"></li>
                         <li><span style="color: #FF0000; font-size: 11px;">ENGLISH</span> <img src="{{asset('front/img/kh.gif')}}"></li>
                         <li><span style="color: #FF0000; font-size: 11px;">FRANCE</span> <img src="{{asset('front/img/fr.gif')}}"></li>
                     </ul>
                 </div>
-                <!-- END TOP BAR LEFT PART -->
-                <!-- BEGIN TOP BAR MENU -->
-                <div class="col-md-3 col-sm-3 additional-nav">
-                    <ul class="list-unstyled list-inline">
-                        <li><input type="text" name="search"> <input type="button" name="btn_search" value="Search"></li>
-                    </ul>
-                </div>
-                <!-- END TOP BAR MENU -->
+
             </div>
         </div>        
     </div>
     <header>
       <div class="container">
         <div class="akp-en-logo">
-          <img src="{{asset('front/img/akp-en-logo.gif')}}">
+          <a href="{{url('/')}}"><img src="{{asset('front/img/akp-en-logo.gif')}}"></a>
         </div>
       </div>
     </header>
@@ -84,6 +74,8 @@
                 </li>
               </ul>
             </li>   
+            <li><a class="nav-link" href="{{url('/')}}">Contact</a></li>
+            <li><a class="nav-link" href="{{url('/')}}">About</a></li>
           </ul>
         </div>
         <!-- END NAVIGATION -->

@@ -19,6 +19,7 @@ class UploadGalleryController extends Controller
         $data["gallerys"] = DB::table('gallerys')
         ->join('categories' , 'categories.id', "=", "gallerys.category_id")
         ->select("gallerys.*", "categories.*", "gallerys.id as id")
+        ->orderBy('gallerys.id', 'desc')
         ->where('gallerys.active',1)
         ->where('categories.active',1)
         ->paginate(25);
