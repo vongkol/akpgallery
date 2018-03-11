@@ -62,17 +62,6 @@ body {
 	position: absolute;
     bottom: 5px
 }
-.navbar {
-	min-height: 0;
-	border-radius: 0;
-}
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-}
-.navbar-default {
-    background-color: #111;
-    border: 0;
-}
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;

@@ -39,12 +39,18 @@
         </div>
       </div>
     </header>
-      <nav class="navbar navbar-default">
- 
-          <ul class="nav navbar-nav">
-            <li><a href="{{url('/')}}">Home</a></li>
+    <!-- END TOP BAR -->
+    <!-- BEGIN HEADER -->
+    <div class="header">
+      <div class="container">
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation font-transform-inherit">
+          <ul>
+            <li><a class="nav-link" href="{{url('/')}}">Home</a></li>
             <li class="dropdown">
-            <li class="dropdown dropdown-megamenu">
+             <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
                 Gallery
               </a>
@@ -66,13 +72,15 @@
                   </div>
                 </li>
               </ul>
-            </li> 
-        
-          <li><a href="{{url('/')}}">Contact</a></li>
-          <li><a href="{{url('/')}}">About </a></li>
+            </li>   
+            <li><a class="nav-link" href="{{url('/')}}">Contact</a></li>
+            <li><a class="nav-link" href="{{url('/')}}">About</a></li>
           </ul>
-      </nav>
-
+        </div>
+        <!-- END NAVIGATION -->
+      </div>
+    </div>
+    <!-- Header END -->
     @yield('content')
 
     <!-- BEGIN FOOTER -->
