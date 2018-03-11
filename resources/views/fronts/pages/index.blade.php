@@ -1,15 +1,41 @@
 @extends("layouts.front")
 @section('content')
 <div class="row contain-b">
-    <div class="row contain-b">
-        <div class="slideshow-container">
-            <div class="col-md-12 slideshow ">
-                <?php $slides = DB::table('slides')->orderBy('order', 'desc')->where('active', 1)->get();?>
-                @foreach($slides as $s)
-                <img src="{{asset('front/slides/'.$s->photo)}}" class="mySlides" alt="slide" style="width:100%;"/>
-                @endforeach
+    <div class="col-md-12">
+  <?php $slides = DB::table('slides')->orderBy('order', 'desc')->where('active', 1)->get(); $i = 1;?>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+        @foreach($slides as $s)
+        @if($i==1)
+        <div class="item active">
+            <img src="{{asset('front/slides/'.$s->photo)}}"  alt="" width="100%">
+            <div class="carousel-caption">
+            <h3> {{$s->name}}</h3>
             </div>
         </div>
+        @else 
+        <div class="item">
+            <img src="{{asset('front/slides/'.$s->photo)}}"  alt="" width="100%">
+            <div class="carousel-caption">
+            <h3>{{$s->name}}</h3>
+            </div>
+        </div>
+        @endif
+        <?php $i++; ?>
+      @endforeach
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+ 
         <div class="main">
             <div class="col-md-12 ">
                 <p><br></p>
