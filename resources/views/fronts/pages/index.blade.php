@@ -35,7 +35,7 @@
     </a>
   </div>
 </div>
-</div>
+ 
         <div class="main">
             <div class="col-md-12 ">
                 <p><br></p>
