@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AKP</title>
+  <title>AKP Gallery</title>
   <link href="{{asset('front/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('front/plugins/owl.carousel/assets/owl.carousel.css')}}" rel="stylesheet">
   <!-- Theme styles START -->
   <link href="{{asset('front/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('front/css/style-responsive.css')}}" rel="stylesheet">
@@ -90,7 +89,7 @@
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-4 col-sm-4 ">
-             © Copyright 2017. All Rights Reserved.
+             © Copyright {{date('Y')}}. All Rights Reserved.
           </div>
           <!-- END COPYRIGHT -->
         </div>
@@ -100,14 +99,6 @@
     <script src="{{asset('front/plugins/jquery.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('front/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>      
     <!-- END CORE PLUGINS -->
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            Layout.init();    
-            Layout.initOWL();
-            Layout.initTwitter();
-            //Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-            //Layout.initNavScrolling(); 
-        });
-    </script>
+   
 </body>
 </html>

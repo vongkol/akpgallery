@@ -70,3 +70,16 @@ body {
 .carousel {
     margin-top: -23px;
 }
+.carousel-caption
+{
+	background: rgba(0,0,0, 0.5);
+	width: 100%;
+	padding: 2px;
+	position: absolute;
+	left:  0;
+	bottom: 0;
+}
+.carousel-caption h4{
+	padding-top: 9px;
+	color: #fff;
+}
